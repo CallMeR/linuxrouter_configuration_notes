@@ -32,13 +32,12 @@ Linux 路由器的安装以及折腾手记。
 
 ### 系列章节
 
-0.  [PVE下创建Ubuntu服务器](./0.PVE下创建Ubuntu服务器.md)  
-1.  [Ubuntu服务器安装](./1.Ubuntu服务器安装.md)  
-2.  [Ubuntu服务器初始化](./2.Ubuntu服务器初始化.md)
-3.  [设置基础网络和系统参数](./3.设置基础网络和系统参数.md)
-4.  [设置PPPoE拨号和防火墙](./4.设置PPPoE拨号和防火墙.md)
-5.  [设置DNS和DHCP服务](./5.设置DNS和DHCP服务.md)
-6.  [Ubuntu服务器优化](./6.Ubuntu服务器优化.md)
+0.  [PVE下创建Ubuntu服务器](./00.PVE下创建Ubuntu服务器.md)  
+1.  [Ubuntu服务器安装](./01.Ubuntu服务器安装.md)  
+2.  [Ubuntu服务器初始化](./02.Ubuntu服务器初始化.md)
+3.  [设置基础网络和系统参数](./03.设置基础网络和系统参数.md)
+4.  [设置PPPoE拨号和防火墙](./04.设置PPPoE拨号和防火墙.md)
+5.  [设置DNS和DHCP服务](./05.设置DNS和DHCP服务.md)
 
 
 ### 参考文档

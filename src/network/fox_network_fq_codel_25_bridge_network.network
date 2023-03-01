@@ -20,5 +20,5 @@ QuantumBytes=500
 ECN=yes
 
 [Link]
-RequiredForOnline=no
+RequiredForOnline=yes
 
