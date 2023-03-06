@@ -32,12 +32,12 @@ Linux 路由器的安装以及折腾手记。
 
 ### 系列章节
 
-0.  [Ubuntu_PVE下创建服务器](./00.Ubuntu_PVE下创建服务器.md)  
+0.  [Ubuntu_PVE创建服务器](./00.Ubuntu_PVE创建服务器.md)  
 1.  [Ubuntu_服务器安装](./01.Ubuntu_服务器安装.md)  
-2.  [Ubuntu_服务器初始化](./02.Ubuntu_服务器初始化.md)
-3.  [Ubuntu_设置系统参数](./03.Ubuntu_设置系统参数.md)
-4.  [Ubuntu_设置系统网络](./04.Ubuntu_设置系统网络.md)
-5.  [Ubuntu_设置Dnsmasq](./05.Ubuntu_设置Dnsmasq.md)
+2.  [Ubuntu_服务器初始化](./02.Ubuntu_服务器初始化.md)  
+3.  [Ubuntu_设置系统参数](./03.Ubuntu_设置系统参数.md)  
+4.  [Ubuntu_设置系统网络](./04.Ubuntu_设置系统网络.md)  
+5.  [Ubuntu_设置Dnsmasq](./05.Ubuntu_设置Dnsmasq.md)  
 
 
 ### 参考文档
