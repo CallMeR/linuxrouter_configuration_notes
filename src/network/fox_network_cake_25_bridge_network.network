@@ -10,7 +10,8 @@ LinkLocalAddressing=ipv6
 Address=172.16.1.1/24
 
 [Address]
-Address=fd10::1/64
+Address=fdac::1/64
+RouteMetric=512
 
 [CAKE]
 Bandwidth=500M
