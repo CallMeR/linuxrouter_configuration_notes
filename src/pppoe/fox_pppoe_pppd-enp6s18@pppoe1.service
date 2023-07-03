@@ -1,0 +1,34 @@
+# This configuration file is customized by fox,
+# Optimize for PPPoE systemd service.
+
+[Unit]
+Description=PPP connection for %I
+Documentation=man:pppd(8)
+BindsTo=sys-subsystem-net-devices-%j.device
+After=sys-subsystem-net-devices-%j.device
+After=network.target
+Before=default.target
+
+[Service]
+Type=notify
+ExecStartPre=/lib/systemd/systemd-networkd-wait-online -i %J -o carrier
+ExecStart=/usr/sbin/pppd plugin rp-pppoe.so %J call %I linkname %I ifname %I up_sdnotify
+ExecStop=/bin/kill $MAINPID
+ExecReload=/bin/kill -HUP $MAINPID
+StandardOutput=null
+Restart=always
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/run/ /etc/ppp/
+ProtectControlGroups=yes
+SystemCallFilter=~@mount
+SystemCallArchitectures=native
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RestrictRealtime=yes
+
+[Install]
+WantedBy=sys-devices-virtual-net-%i.device
+WantedBy=default.target
+

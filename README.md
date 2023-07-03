@@ -4,9 +4,9 @@
 Linux 路由器的安装以及折腾手记。
 
 - 适用 Linux 发行版（优先使用支持 `systemd` 的发行版）
-    - Debian 12
-    - Ubuntu Server 22.10
     - Arch Linux
+    - Debian 12
+    - Ubuntu Server 23.04
 
 - 演示机：
     - 虚拟化：Proxmox VE
@@ -20,12 +20,11 @@ Linux 路由器的安装以及折腾手记。
         - IP 地址：`172.16.1.1`
         - 子网掩码：`255.255.255.0` ( 即 `/24` )
         - 网关：`172.16.1.1`
-        - DNS：`172.16.1.2` , `172.16.1.3`
+
     - IPv6 网络
         - 分配方式：SLAAC        
         - IP 地址：`fdac::1`
         - 前缀：`fdac::/64`
-        - DNS：`fdac::2` , `fdac::3`
 
 - 外网连接方式：PPPoE
 
@@ -33,11 +32,10 @@ Linux 路由器的安装以及折腾手记。
 ### 系列章节
 
 0.  [Ubuntu_PVE创建服务器](./00.Ubuntu_PVE创建服务器.md)  
-1.  [Ubuntu_服务器安装](./01.Ubuntu_服务器安装.md)  
-2.  [Ubuntu_服务器初始化](./02.Ubuntu_服务器初始化.md)  
+1.  [Ubuntu_安装操作系统](./01.Ubuntu_安装操作系统.md)  
+2.  [Ubuntu_安装系统软件](./02.Ubuntu_安装系统软件.md)  
 3.  [Ubuntu_设置系统参数](./03.Ubuntu_设置系统参数.md)  
 4.  [Ubuntu_设置系统网络](./04.Ubuntu_设置系统网络.md)  
-5.  [Ubuntu_设置Dnsmasq](./05.Ubuntu_设置Dnsmasq.md)  
 
 
 ### 参考文档

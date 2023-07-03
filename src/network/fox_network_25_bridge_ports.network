@@ -1,8 +1,10 @@
+# This configuration file is customized by fox,
+# Optimize for bridge ports.
+
 [Match]
 Name=enp6s19
 Name=enp6s20
 Name=enp6s21
-Name=enp6s22
 
 [Network]
 Bridge=bridge1

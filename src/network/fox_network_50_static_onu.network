@@ -1,3 +1,6 @@
+# This configuration file is customized by fox,
+# Optimize for ONU access.
+
 [Match]
 Name=enp6s18
 

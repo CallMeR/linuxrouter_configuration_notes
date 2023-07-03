@@ -41,7 +41,7 @@ sudo watch -d "nft list ruleset | grep drop"
 sudo watch -d "nft list ruleset | grep dport"
 
 ## 动态查看接口 Qos
-sudo watch -d "tc -s qdisc show dev pppoe-out1"
+sudo watch -d "tc -s qdisc show dev pppoe1"
 
 sudo watch -d "tc -s qdisc show dev bridge1"
 
@@ -66,7 +66,7 @@ sudo dmesg
 sudo journalctl -e
 
 ## 查看拨号服务日志
-sudo journalctl -eu pppd-enp6s18@serverwan.service
+sudo journalctl -eu pppd-enp6s18@pppoe1.service
 
 ## 动态查看 Dnsmasq 最后 30 行日志
 sudo tail -f -n 30 /var/log/dnsmasq.log
@@ -182,7 +182,7 @@ sudo systemctl status chrony.service
 
 sudo systemctl status systemd-networkd.service
 
-sudo systemctl status pppd-enp6s18@serverwan.service
+sudo systemctl status pppd-enp6s18@pppoe1.service
 
 sudo systemctl status nftables.service
 
