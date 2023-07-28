@@ -19,6 +19,8 @@ $ sudo networkctl status -a
 ## 查看端口占用
 $ sudo lsof | grep dnsmasq | grep domain
 
+$ sudo lsof -i:8053
+
 ## 查看本机 IP 地址
 $ ip a
 
@@ -27,6 +29,9 @@ $ ip route show
 
 ## 查看 IPv6 路由表
 $ ip -6 route show
+
+## 查看系统当前链接
+$ watch "ss -antu"
 
 ## 查看系统 nf_conntrack
 $ cat /proc/net/nf_conntrack
@@ -40,7 +45,7 @@ $ sudo watch -d "nft list ruleset | grep drop"
 ## 动态查看 Nftables 防火墙数据包 Redirect
 $ sudo watch -d "nft list ruleset | grep dport"
 
-## 动态查看接口 Qos
+## 动态查看接口 QoS
 $ sudo watch -d "tc -s qdisc show dev pppoe1"
 
 $ sudo watch -d "tc -s qdisc show dev bridge1"
@@ -69,7 +74,13 @@ $ sudo journalctl -e
 $ sudo journalctl -eu pppd-enp6s18@pppoe1.service
 
 ## 动态查看 Dnsmasq 最后 30 行日志
-$ sudo tail -f -n 30 /var/log/dnsmasq.log
+$ sudo tail -n 30 -f /var/log/dnsmasq.log
+
+## 动态查看 SmartDNS 最后 30 行日志
+$ sudo tail -n 30 -f /var/log/smartdns/smartdns.log
+
+## 动态查看系统自动更新最后 30 行日志
+$ sudo tail -n 30 -f /var/log/unattended-upgrades/unattended-upgrades.log
 ```
 
 ## 系统
@@ -178,8 +189,6 @@ $ history -c
 ## 查看系统服务状态
 $ sudo systemctl status systemd-timesyncd.service
 
-$ sudo systemctl status chrony.service
-
 $ sudo systemctl status systemd-networkd.service
 
 $ sudo systemctl status pppd-enp6s18@pppoe1.service
@@ -191,6 +200,8 @@ $ sudo systemctl status sshguard.service
 $ sudo systemctl status systemd-resolved.service
 
 $ sudo systemctl status dnsmasq.service
+
+$ sudo systemctl status smartdns.service
 
 ## 查看系统启动时间分布
 $ sudo systemd-analyze blame
