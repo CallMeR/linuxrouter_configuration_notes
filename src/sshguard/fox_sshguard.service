@@ -1,0 +1,17 @@
+[Unit]
+Description=SSHGuard
+Documentation=man:sshguard(8)
+After=network.target
+Before=sshd.service
+
+[Service]
+PIDFile=/run/sshguard.pid
+ExecStartPre=-/usr/sbin/nft add table ip sshguard
+ExecStartPre=-/usr/sbin/nft add table ip6 sshguard
+ExecStopPost=-/usr/sbin/nft delete table ip sshguard
+ExecStopPost=-/usr/sbin/nft delete table ip6 sshguard
+ExecStart=/usr/sbin/sshguard
+
+[Install]
+WantedBy=multi-user.target
+

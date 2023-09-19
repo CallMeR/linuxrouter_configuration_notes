@@ -5,3 +5,6 @@
 Name=bridge1
 Kind=bridge
 
+[Bridge]
+STP=yes
+
