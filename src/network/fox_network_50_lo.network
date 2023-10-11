@@ -81,7 +81,7 @@ Type=unreachable
 Destination=2001:db8::/32
 Type=unreachable
 [Route]
-Destination=2001:10::/28
+Destination=2001:20::/28
 Type=unreachable
 [Route]
 Destination=2002::/16

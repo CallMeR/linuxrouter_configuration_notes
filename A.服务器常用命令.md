@@ -54,8 +54,8 @@ $ sudo watch -d "tc -s qdisc show dev bridge1"
 $ dig baidu.com @223.5.5.5
 $ dig AAAA www.qq.com @223.5.5.5
 
-$ drill baidu.com @223.5.5.5
-$ drill AAAA www.qq.com @223.5.5.5
+$ kdig baidu.com @223.5.5.5
+$ kdig AAAA www.qq.com @223.5.5.5
 
 $ nslookup baidu.com 223.5.5.5
 $ nslookup -qt=AAAA www.qq.com 223.5.5.5
