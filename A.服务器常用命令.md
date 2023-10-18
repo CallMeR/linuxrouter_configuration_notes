@@ -33,8 +33,8 @@ $ ip -6 route show
 ## 查看系统当前链接
 $ watch "ss -antu"
 
-## 查看系统 nf_conntrack
-$ cat /proc/net/nf_conntrack
+## 查看系统 offload 链接
+$ sudo watch "conntrack -L | grep OFFLOAD"
 
 ## 查看 Nftables 防火墙
 $ sudo nft list ruleset

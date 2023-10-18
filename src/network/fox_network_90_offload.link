@@ -2,12 +2,9 @@
 # Optimize for nic offload.
 
 [Match]
-OriginalName=*
+OriginalName=enp*
 
 [Link]
-NamePolicy=keep kernel database onboard slot path
-AlternativeNamesPolicy=database onboard slot path
-MACAddressPolicy=persistent
 GenericSegmentationOffload=no
 GenericReceiveOffload=no
 TCPSegmentationOffload=no

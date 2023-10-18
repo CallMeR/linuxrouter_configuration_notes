@@ -21,11 +21,9 @@ UseNTP=no
 UseDomains=no
 
 [FairQueueingControlledDelay]
-PacketLimit=800
+PacketLimit=768
 MemoryLimitBytes=32M
-IntervalSec=60ms
-QuantumBytes=300
-ECN=yes
+QuantumBytes=384
 
 [Link]
 RequiredForOnline=yes

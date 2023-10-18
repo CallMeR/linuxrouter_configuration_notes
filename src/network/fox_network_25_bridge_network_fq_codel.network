@@ -17,11 +17,9 @@ Address=fdac::1/64
 RouteMetric=512
 
 [FairQueueingControlledDelay]
-PacketLimit=1000
+PacketLimit=1024
 MemoryLimitBytes=32M
-IntervalSec=60ms
-QuantumBytes=500
-ECN=yes
+QuantumBytes=512
 
 [Link]
 RequiredForOnline=yes
