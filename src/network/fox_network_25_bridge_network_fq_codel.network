@@ -18,7 +18,6 @@ RouteMetric=512
 
 [FairQueueingControlledDelay]
 PacketLimit=1024
-MemoryLimitBytes=32M
 QuantumBytes=512
 
 [Link]

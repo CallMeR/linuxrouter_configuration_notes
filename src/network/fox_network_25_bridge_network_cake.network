@@ -23,7 +23,7 @@ MPUBytes=84
 UseRawPacketSize=yes
 FlowIsolationMode=triple
 PriorityQueueingPreset=diffserv4
-RTTSec=60ms
+RTTSec=50ms
 
 [Link]
 RequiredForOnline=yes

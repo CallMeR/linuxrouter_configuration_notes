@@ -22,7 +22,6 @@ UseDomains=no
 
 [FairQueueingControlledDelay]
 PacketLimit=768
-MemoryLimitBytes=32M
 QuantumBytes=384
 
 [Link]
