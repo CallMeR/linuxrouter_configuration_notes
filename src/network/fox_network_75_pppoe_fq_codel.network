@@ -21,7 +21,9 @@ UseNTP=no
 UseDomains=no
 
 [FairQueueingControlledDelay]
-PacketLimit=768
+PacketLimit=1024
+TargetSec=4ms
+IntervalSec=60ms
 QuantumBytes=384
 
 [Link]

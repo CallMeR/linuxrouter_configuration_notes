@@ -18,6 +18,8 @@ RouteMetric=512
 
 [FairQueueingControlledDelay]
 PacketLimit=1024
+TargetSec=4ms
+IntervalSec=60ms
 QuantumBytes=512
 
 [Link]
