@@ -19,7 +19,7 @@ $ sudo networkctl status -a
 ## 查看端口占用
 $ sudo lsof | grep dnsmasq | grep domain
 
-$ sudo lsof -i:8053
+$ sudo lsof -n -i :6053
 
 ## 查看本机 IP 地址
 $ ip a
