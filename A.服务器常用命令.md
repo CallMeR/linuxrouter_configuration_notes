@@ -30,10 +30,10 @@ $ ip route show
 ## 查看 IPv6 路由表
 $ ip -6 route show
 
-## 查看系统当前链接
+## 查看系统当前连接
 $ watch "ss -antu"
 
-## 查看系统 offload 链接
+## 查看系统 offload 连接
 $ sudo watch "conntrack -L | grep OFFLOAD"
 
 ## 查看 Nftables 防火墙
