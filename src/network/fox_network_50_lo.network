@@ -15,9 +15,6 @@ Type=unreachable
 Destination=100.64.0.0/10
 Type=unreachable
 [Route]
-Destination=127.0.0.0/8
-Type=unreachable
-[Route]
 Destination=169.254.0.0/16
 Type=unreachable
 [Route]
@@ -51,16 +48,10 @@ Type=unreachable
 Destination=240.0.0.0/4
 Type=unreachable
 [Route]
-Destination=255.255.255.255/32
-Type=unreachable
-[Route]
-Destination=::1/128
-Type=unreachable
-[Route]
 Destination=::/128
 Type=unreachable
 [Route]
-Destination=64:ff9b::/96
+Destination=0000::/96
 Type=unreachable
 [Route]
 Destination=::ffff:0:0/96
@@ -81,6 +72,9 @@ Type=unreachable
 Destination=2001:db8::/32
 Type=unreachable
 [Route]
+Destination=2001:10::/28
+Type=unreachable
+[Route]
 Destination=2001:20::/28
 Type=unreachable
 [Route]
@@ -91,6 +85,9 @@ Destination=fc00::/7
 Type=unreachable
 [Route]
 Destination=fe80::/10
+Type=unreachable
+[Route]
+Destination=fec0::/10
 Type=unreachable
 
 [Route]
