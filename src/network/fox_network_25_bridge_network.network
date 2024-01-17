@@ -12,12 +12,6 @@ LinkLocalAddressing=ipv6
 [Address]
 Address=172.16.1.1/24
 
-# IPv6 ULA network.
-
-# [Address]
-# Address=fdac::1/64
-# RouteMetric=512
-
 [Link]
 RequiredForOnline=yes
 
