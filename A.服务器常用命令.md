@@ -33,8 +33,11 @@ $ ip -6 route show
 ## 查看系统当前连接
 $ watch "ss -antu"
 
-## 查看系统 offload 连接
+## 查看系统 Offload 连接
 $ sudo watch "conntrack -L | grep OFFLOAD"
+
+## 查看 SmartDNS 缓存计数
+$ sudo smartdns --cache-print /tmp/smartdns.cache | wc -l
 
 ## 查看 Nftables 防火墙
 $ sudo nft list ruleset
@@ -174,7 +177,7 @@ $ sudo chattr +i /etc/resolv.conf
 $ lsattr /etc/resolv.conf
 
 ## 查看命令历史记录
-history
+$ history
 
 ## 清理命令历史记录文件
 $ rm -rvf ~/.bash_history ~/.zsh_history
