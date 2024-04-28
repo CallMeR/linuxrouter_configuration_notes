@@ -6,7 +6,7 @@ Linux 路由器的安装以及折腾手记。
 - 适用 Linux 发行版（优先使用支持 `systemd` 的发行版）
     - Arch Linux
     - Debian 12
-    - Ubuntu Server 23.04
+    - Ubuntu Server 24.04
 
 - 演示机：
     - 虚拟化：Proxmox VE
