@@ -99,7 +99,7 @@ $ sudo shutdown now -r
 $ sudo reboot
 
 ## 查看系统资源
-$ sudo htop
+$ sudo btop
 
 ## 查看硬盘用量
 $ df -hT
