@@ -18,6 +18,7 @@ OverheadBytes=38
 MPUBytes=84
 UseRawPacketSize=yes
 FlowIsolationMode=triple
+NAT=no
 PriorityQueueingPreset=diffserv4
 RTTSec=50ms
 
