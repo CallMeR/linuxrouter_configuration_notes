@@ -120,7 +120,7 @@ $ sudo apt list --upgradable
 $ sudo apt upgrade
 
 ## 更新系统
-$ sudo apt dist-upgrade
+$ sudo apt full-upgrade
 
 ## 自动移除不必要软件包
 $ sudo apt clean && sudo apt autoclean && sudo apt autoremove --purge
