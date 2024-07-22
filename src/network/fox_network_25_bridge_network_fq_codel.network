@@ -13,10 +13,10 @@ LinkLocalAddressing=ipv6
 Address=172.16.1.1/24
 
 [FairQueueingControlledDelay]
-PacketLimit=1024
+PacketLimit=2560
 TargetSec=4ms
-IntervalSec=60ms
-QuantumBytes=512
+IntervalSec=80ms
+MemoryLimitBytes=16M
 
 [Link]
 RequiredForOnline=yes
