@@ -81,7 +81,10 @@ Type=unreachable
 Destination=2002::/16
 Type=unreachable
 [Route]
-Destination=fc00::/7
+Destination=fc00::/8
+Type=unreachable
+[Route]
+Destination=fd00::/8
 Type=unreachable
 [Route]
 Destination=fe80::/10
@@ -92,7 +95,7 @@ Type=unreachable
 
 [Route]
 Table=1024
-Destination=fc00::/7
+Destination=fd00::/8
 Type=throw
 [Route]
 Table=1024
@@ -116,7 +119,7 @@ Destination=0.0.0.0/0
 Type=prohibit
 
 [RoutingPolicyRule]
-Priority=10000
-From=fc00::/7
+Priority=10240
+From=fd00::/8
 Table=1024
 
