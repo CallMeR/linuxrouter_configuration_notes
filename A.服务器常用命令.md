@@ -37,7 +37,7 @@ $ watch "ss -antu"
 $ sudo watch "conntrack -L | grep OFFLOAD"
 
 ## 查看 SmartDNS 缓存计数
-$ sudo smartdns --cache-print /tmp/smartdns.cache | wc -l
+$ sudo smartdns --cache-print /var/cache/smartdns/smartdns.cache | wc -l
 
 ## 查看 Nftables 防火墙
 $ sudo nft list ruleset
@@ -123,7 +123,7 @@ $ sudo apt upgrade
 $ sudo apt full-upgrade
 
 ## 自动移除不必要软件包
-$ sudo apt clean && sudo apt autoclean && sudo apt autoremove --purge
+$ sudo bash -c 'apt clean && apt autoclean && apt autoremove --purge'
 
 ## 查看系统 PCI 设备
 $ sudo lspci
@@ -156,10 +156,10 @@ $ sudo cpufreq-info
 $ sudo watch -d "sensors"
 
 ## 清理系统缓存
-$ sudo rm -rvf /var/cache/apt/* /var/lib/apt/lists/* /tmp/*
+$ sudo bash -c 'find /var/cache/apt /var/cache/smartdns /var/lib/apt/lists /tmp -type f -print -delete'
 
 ## 清理系统日志
-$ sudo find /var/log/ -type f | xargs sudo rm -rvf
+$ sudo find /var/log/ -type f -print -delete
 
 ## 使用 curl 安装 oh-my-zsh
 $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
