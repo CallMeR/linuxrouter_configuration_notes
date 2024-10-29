@@ -16,6 +16,14 @@ $ sudo ethtool -S enp6s18
 ## 查看网络配置情况
 $ sudo networkctl status -a
 
+## 查看网络栈状态
+$ sudo cat /proc/net/softnet_stat
+
+## 查看系统 socket 统计
+$ sudo ss -s
+
+$ sudo cat /proc/net/sockstat
+
 ## 查看端口占用
 $ sudo lsof | grep dnsmasq | grep domain
 
