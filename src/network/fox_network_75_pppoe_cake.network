@@ -28,7 +28,7 @@ UseRawPacketSize=yes
 FlowIsolationMode=triple
 NAT=yes
 PriorityQueueingPreset=diffserv4
-RTTSec=50ms
+RTTSec=60ms
 AckFilter=yes
 
 [Link]
