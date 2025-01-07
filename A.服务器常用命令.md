@@ -164,10 +164,10 @@ $ sudo cpufreq-info
 $ sudo watch -d "sensors"
 
 ## 清理系统缓存
-$ sudo bash -c 'find /var/cache/apt /var/cache/smartdns /var/lib/apt/lists /tmp -type f -print -delete'
+$ sudo bash -c 'find /var/cache/apt/ /var/cache/smartdns/ /var/lib/apt/lists/ /tmp/ -type f -print -delete'
 
 ## 清理系统日志
-$ sudo find /var/log/ -type f -print -delete
+$ sudo bash -c 'find /var/log/ -type f -print -delete'
 
 ## 使用 curl 安装 oh-my-zsh
 $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
