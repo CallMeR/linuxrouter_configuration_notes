@@ -133,6 +133,9 @@ $ sudo apt full-upgrade
 ## 自动移除不必要软件包
 $ sudo bash -c 'apt clean && apt autoclean && apt autoremove --purge'
 
+## 查看自动更新后配置文件变更
+$ sudo find /etc -name '*.dpkg-*' -o -name '*.ucf-*' -o -name '*.merge-error'
+
 ## 查看系统 PCI 设备
 $ sudo lspci
 
